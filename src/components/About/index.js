@@ -7,7 +7,7 @@ function About() {
                 <h1 className="page-header">About Me</h1>
             </div>
             <div className="center">
-                <img src={require('../../public/img/self.jpeg')} 
+                <img src={require('../../src/assets/img/self.jpeg')} 
                 alt="self-photo" 
                 className="photo"/>
             </div>
