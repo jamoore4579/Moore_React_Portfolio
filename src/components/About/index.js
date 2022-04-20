@@ -7,7 +7,7 @@ function About() {
                 <h1 className="page-header">About Me</h1>
             </div>
             <div className="center">
-                <img src={require('../../src/assets/img/self.jpeg')} 
+                <img src={require('../../src/assets/img/self.jpg')}
                 alt="self-photo" 
                 className="photo"/>
             </div>
@@ -17,7 +17,7 @@ function About() {
                 </p>
             </div>
         </section>
-    )
+    );
 }
 
 export default About;

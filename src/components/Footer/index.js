@@ -1,5 +1,5 @@
 import React from "react";
-import Icon from "react-native-ionicons"
+import Icon from "react-native-icons/Ionicons";
 
 function Footer() {
     return (
@@ -10,7 +10,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noferrer"
                 >
-                    <Icon name="logo-github"/>
+                    <Icon name="github" size={16} color="black"/>
                 </a>
                 
             </div>
@@ -20,7 +20,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noferrer"
                 >
-                    <Icon name="logo-github"/>
+                    <Icon name="github" size={16} color="black"/>
                 </a>
                 
             </div>
@@ -30,7 +30,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noferrer"
                 >
-                    <Icon name="logo-twitter"/>
+                    <Icon name="github" size={16} color="black"/>
                 </a>
             </div>
         </footer>
