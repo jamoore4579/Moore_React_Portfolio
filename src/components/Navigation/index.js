@@ -3,8 +3,8 @@ import {
     MDBNavbar,
     MDBNavbarBrand,
     MDBNavbarNav,
-    MDBNavbarItem,
-    MDBNavbarLink,
+    MDBNavItem,
+    MDBNavLink,
     MDBIcon,
 } from "mdbreact";
 
@@ -20,30 +20,30 @@ function Navbar() {
                 <strong className="white-text">Jason Moore</strong>
             </MDBNavbarBrand>
             <MDBNavbarNav right>
-                <MDBNavbarItem>
-                    <MDBNavbarLink className="waves-effect waves-light" to="/about">
+                <MDBNavItem>
+                    <MDBNavLink className="waves-effect waves-light" to="/about">
                         <MDBIcon icon="home" className="mr-1" />
                         About
-                    </MDBNavbarLink>
-                </MDBNavbarItem>
-                <MDBNavbarItem>
-                    <MDBNavbarLink className="waves-effect waves-light" to="/portfolio">
+                    </MDBNavLink>
+                </MDBNavItem>
+                <MDBNavItem>
+                    <MDBNavLink className="waves-effect waves-light" to="/portfolio">
                         <MDBIcon icon="home" className="mr-1" />
                         Projects
-                    </MDBNavbarLink>
-                </MDBNavbarItem>
-                <MDBNavbarItem>
-                    <MDBNavbarLink className="waves-effect waves-light" to="/contact">
+                    </MDBNavLink>
+                </MDBNavItem>
+                <MDBNavItem>
+                    <MDBNavLink className="waves-effect waves-light" to="/contact">
                         <MDBIcon icon="home" className="mr-1" />
                         Contact
-                    </MDBNavbarLink>
-                </MDBNavbarItem>
-                <MDBNavbarItem>
-                    <MDBNavbarLink className="waves-effect waves-light" to="/resume">
+                    </MDBNavLink>
+                </MDBNavItem>
+                <MDBNavItem>
+                    <MDBNavLink className="waves-effect waves-light" to="/resume">
                         <MDBIcon icon="home" className="mr-1" />
                         Resume
-                    </MDBNavbarLink>
-                </MDBNavbarItem>
+                    </MDBNavLink>
+                </MDBNavItem>
             </MDBNavbarNav>
         </MDBNavbar>
     );

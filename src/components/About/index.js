@@ -1,6 +1,6 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol} from "mdbreact"
-const profile = require('../assets/img/self.jpg')
+const profile = require('../../assets/img/self.jpg')
 
 const About = () => {
     return (

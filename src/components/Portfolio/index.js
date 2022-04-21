@@ -1,6 +1,6 @@
 import React from "react";
-const runbuddy = require('../assets/img/run-buddy.jpg')
-const weather = require('../assets/img/weather.jpg')
+const runbuddy = require('../../assets/img/run-buddy.jpg')
+const weather = require('../../assets/img/weather.jpg')
 import {
     MDBCardGroup,
     MDBIcon,
@@ -8,7 +8,6 @@ import {
     MDBBtn,
     MDBCard,
     MDBCardBody,
-    MDBCardImage,
     MDBCardImage,
     MDBCardTitle,
     MDBCardText,

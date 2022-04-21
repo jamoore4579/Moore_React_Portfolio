@@ -1,8 +1,8 @@
 import React from "react";
-import About from "..components/About/index"
+import About from "../components/About/index"
 import Wrapper from "../components/Wrapper/index"
 
-function About() {
+function AboutMe() {
     return (
         <Wrapper>
             <About />
@@ -10,4 +10,4 @@ function About() {
     );
 }
 
-export default About;
+export default AboutMe;
