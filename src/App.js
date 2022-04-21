@@ -1,44 +1,29 @@
-import './App.css';
-import React, { useState } from 'react';
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Resume from "./components/Resume"
+import React from "react";
+import { HashRouter, Route } from "react-router-dom";
+import Navbar from "./components/Navigation/index";
+import Footer from "./components/Footer/index";
+import Wrapper from "./components/Wrapper/index";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import MyResume from "./pages/Resume"
 
 function App() {
-    const [ navigatePage, setNavigatePage ] = useState("about");
-
-    const renderTab = () => {
-        switch (navigatePage) {
-            case "about":
-                return <About />;
-            case "portfolio":
-                return <Portfolio />;
-            case "contact":
-                return <Contact />;
-            case "resume":
-                return <Resume />;
-            default:
-                return null;
-        }
-    };
-
     return (
-        <div>
-            <div className='mobile-header'>
-                <Header navigatePage={navigatePage} setNavigatePage={setNavigatePage}></Header>
-            </div>
+        <HashRouter basename="/">
             <div>
-                <main>{renderTab()}</main>
+                <Navbar />
+                <Wrapper>
+                    <Route exact path="/" component={About} />
+                    <Route exact path="/about" component={About} />
+                    <Route exact path="/resume" component={MyResume} />
+                    <Route exact path="/portfolio" component={Portfolio} />
+                    <Route exact path="/contact" component={Contact} />
+                </Wrapper>
+                <Footer />
             </div>
-            <div>
-                <Footer></Footer>
-            </div>
-        </div>
+        </HashRouter>
     );
-  
-}
+};
 
 export default App;
