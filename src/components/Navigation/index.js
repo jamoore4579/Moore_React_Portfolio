@@ -1,26 +1,52 @@
 import React from "react";
+import {
+    MDBNavbar,
+    MDBNavbarBrand,
+    MDBNavbarNav,
+    MDBNavbarItem,
+    MDBNavbarLink,
+    MDBIcon,
+} from "mdbreact";
 
-function Navigation(props) {
-    const { navigatePage, setNavigatePage } = props;
-
+function Navbar() {
     return (
-        <nav>
-            <ul classname="flex-row mobile-view">
-                <li classname={navigatePage === "about" ? "mx-2 navActive" : "mx-2"}>
-                    <span onClick={() => setNavigatePage("about")}>About Me</span>
-                </li>
-                <li classname={navigatePage === "portfolio" ? "mx-2 navActive" : "mx-2"}>
-                    <span onClick={() => setNavigatePage("portfolio")}>Portfolio</span>
-                </li>
-                <li classname={navigatePage === "contact" ? "mx-2 navActive" : "mx-2"}>
-                    <span onClick={() => setNavigatePage("contact")}>Contact</span>
-                </li>
-                <li classname={navigatePage === "resume" ? "mx-2 navActive" : "mx-2"}>
-                    <span onClick={() => setNavigatePage("resume")}>Resume</span>
-                </li>
-            </ul>
-        </nav>
+        <MDBNavbar
+            color="special-color-dark"
+            dark
+            expand="md"
+            style={{ width: "100%" }}
+        >
+            <MDBNavbarBrand>
+                <strong className="white-text">Jason Moore</strong>
+            </MDBNavbarBrand>
+            <MDBNavbarNav right>
+                <MDBNavbarItem>
+                    <MDBNavbarLink className="waves-effect waves-light" to="/about">
+                        <MDBIcon icon="home" className="mr-1" />
+                        About
+                    </MDBNavbarLink>
+                </MDBNavbarItem>
+                <MDBNavbarItem>
+                    <MDBNavbarLink className="waves-effect waves-light" to="/portfolio">
+                        <MDBIcon icon="home" className="mr-1" />
+                        Projects
+                    </MDBNavbarLink>
+                </MDBNavbarItem>
+                <MDBNavbarItem>
+                    <MDBNavbarLink className="waves-effect waves-light" to="/contact">
+                        <MDBIcon icon="home" className="mr-1" />
+                        Contact
+                    </MDBNavbarLink>
+                </MDBNavbarItem>
+                <MDBNavbarItem>
+                    <MDBNavbarLink className="waves-effect waves-light" to="/resume">
+                        <MDBIcon icon="home" className="mr-1" />
+                        Resume
+                    </MDBNavbarLink>
+                </MDBNavbarItem>
+            </MDBNavbarNav>
+        </MDBNavbar>
     );
-}
+};
 
-export default Navigation;
+export default Navbar;
