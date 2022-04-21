@@ -1,28 +1,17 @@
 import React from "react";
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact"
+import Resume from "../assets/img/Jason_Moore_20_22.pdf"
 
-function Resume() {
+const MyResume = () => {
     return (
-        <section>
-            <div className="center">
-                <h1 className="page-header">My Resume</h1>
-            </div>
-            <div className="bottom-spacing">
-                <a href={require("../../assets/img/Jason_Moore_20_22.pdf")} download>
-                    <h4>Download My Resume</h4>
-                </a>
-            </div>
-            <div>
-                <h5>Front-End Proficiencies</h5>
-                <ol>
-                    <li>HTML5</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>Bootstrap</li>
-                </ol>
-            </div>
-        </section>
+        <MDBContainer className="mt-5">
+            <MDBRow>
+                <MDBCol md="12">
+                    <embed id="Resume" src={Resume} width="100%" height="750px" />
+                </MDBCol>
+            </MDBRow>
+        </MDBContainer>
     );
-}
+};
 
-export default Resume;
+export default MyResume;
