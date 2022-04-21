@@ -107,7 +107,7 @@ const Projects = () => {
     )
 }
 
-// export default Projects;
+ export default Projects;
 //         {
 //             name: 'Run Buddy',
 //             description: 'Runner Web site',
