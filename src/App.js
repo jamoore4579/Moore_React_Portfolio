@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from './components/Navigation/index';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/index';
-import Wrapper from './components/Wrapper/index';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
