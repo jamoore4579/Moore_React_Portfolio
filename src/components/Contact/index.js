@@ -8,7 +8,16 @@ const ContactInfo = () => {
         <MDBContainer className="mt-5">
             <MDBRow>
                 <MDBCol md="12" className="text-center">
-                <section>
+                    <h2>Contact Information</h2>
+                </MDBCol>
+            </MDBRow>
+        </MDBContainer>
+    );
+};
+
+export default ContactInfo;
+
+/* <section>
                     <div className="center">
                         <h2 className="page-header">Contact Me</h2>
                     </div>
@@ -42,15 +51,7 @@ const ContactInfo = () => {
                             <button type="submit">Submit</button>
                         </form>
                     </div>
-                </section>
-                </MDBCol>
-            </MDBRow>
-        </MDBContainer>
-    );
-};
-
-export default ContactInfo;
-
+                </section> */
 
 //import React, { useState } from "react";
 
