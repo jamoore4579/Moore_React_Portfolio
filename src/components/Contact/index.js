@@ -1,17 +1,10 @@
 import React from "react";
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 //import { validateEmail, validEmail } from "../../utils/helpers";
 
 
 const ContactInfo = () => {
     return (
-        <MDBContainer className="mt-5">
-            <MDBRow>
-                <MDBCol md="12" className="text-center">
-                    <h2>Contact Information</h2>
-                </MDBCol>
-            </MDBRow>
-        </MDBContainer>
+        <h2>Contact Information</h2>       
     );
 };
 

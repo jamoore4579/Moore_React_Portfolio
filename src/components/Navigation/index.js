@@ -1,51 +1,17 @@
-import React from "react";
-import {
-    MDBNavbar,
-    MDBNavbarBrand,
-    MDBNavbarNav,
-    MDBNavItem,
-    MDBNavLink,
-    MDBIcon,
-} from "mdbreact";
+import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
-        <MDBNavbar
-            color="special-color-dark"
-            dark
-            expand="md"
-            style={{ width: "100%" }}
-        >
-            <MDBNavbarBrand>
-                <strong className="white-text">Jason Moore</strong>
-            </MDBNavbarBrand>
-            <MDBNavbarNav right>
-                <MDBNavItem>
-                    <MDBNavLink className="waves-effect waves-light" to="/about">
-                        <MDBIcon icon="home" className="mr-1" />
-                        About
-                    </MDBNavLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                    <MDBNavLink className="waves-effect waves-light" to="/portfolio">
-                        <MDBIcon icon="home" className="mr-1" />
-                        Projects
-                    </MDBNavLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                    <MDBNavLink className="waves-effect waves-light" to="/contact">
-                        <MDBIcon icon="home" className="mr-1" />
-                        Contact
-                    </MDBNavLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                    <MDBNavLink className="waves-effect waves-light" to="/resume">
-                        <MDBIcon icon="home" className="mr-1" />
-                        Resume
-                    </MDBNavLink>
-                </MDBNavItem>
-            </MDBNavbarNav>
-        </MDBNavbar>
+        <div>
+            <nav className='navbar'>
+                <div className='navbar-container'>
+                    <Link to='/' className='navbar-logo'>
+                        Jason A Moore <i className="fa-solid fa-desktop"></i>'
+                    </Link>
+                </div>
+            </nav>
+        </div>
     );
 };
 

@@ -1,28 +1,24 @@
-import React from "react";
-import { HashRouter, Route } from "react-router-dom";
-import Navbar from "./components/Navigation/index";
-import Footer from "./components/Footer/index";
-import Wrapper from "./components/Wrapper/index";
-import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
-import MyResume from "./pages/Resume"
+import React from 'react';
+import Navbar from './components/Navigation/index';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer/index';
+import Wrapper from './components/Wrapper/index';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+import MyResume from './pages/Resume';
+import './App.css';
 
 function App() {
     return (
-        <HashRouter basename="/">
-            <div>
+
+            <Router>
                 <Navbar />
-                <Wrapper>
-                    <Route exact path="/" component={About} />
-                    <Route exact path="/about" component={About} />
-                    <Route exact path="/resume" component={MyResume} />
-                    <Route exact path="/portfolio" component={Portfolio} />
-                    <Route exact path="/contact" component={Contact} />
-                </Wrapper>
-                <Footer />
-            </div>
-        </HashRouter>
+                <Routes>
+                    <Route path='/' exact />
+                </Routes>
+            </Router>
+
     );
 };
 

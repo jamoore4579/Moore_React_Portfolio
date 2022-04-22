@@ -1,108 +1,11 @@
 import React from "react";
+
 const runbuddy = require('../../assets/img/run-buddy.jpg')
 const weather = require('../../assets/img/weather.jpg')
-import {
-    MDBCardGroup,
-    MDBIcon,
-    MDBContainer,
-    MDBBtn,
-    MDBCard,
-    MDBCardBody,
-    MDBCardImage,
-    MDBCardTitle,
-    MDBCardText,
-} from "mdbreact";
 
 const Projects = () => {
     return (
-        <MDBContainer className="mt-5">
-            <MDBCardGroup deck className="mt-3">
-                <MDBCard className="border border-dark">
-                    <MDBCardImage 
-                        style={{ width: "485px" }}
-                        src={runbuddy}
-                        alt="run-buddy"
-                    />
-                    <MDBCardBody>
-                        <MDBCardTitle tag="h5">Run Buddy</MDBCardTitle>
-                        <MDBCardText>
-                        Run Buddy site
-                        </MDBCardText>
-                        <MDBBtn
-                            href="https://jamoore4579.github.io/Run-Buddy-Repo/"
-                            color="primary"
-                            size="md"
-                        >
-                            <MDBIcon icon="clone left" className="mr-1" />
-                            View Project
-                        </MDBBtn>
-                    </MDBCardBody>
-                </MDBCard>
-                <MDBCard className="border border-dark">
-                    <MDBCardImage 
-                        style={{ width: "485px" }}
-                        src={weather}
-                        alt="weather site"
-                    />
-                    <MDBCardBody>
-                        <MDBCardTitle tag="h5">Weather Dashboard</MDBCardTitle>
-                        <MDBCardText>
-                        The Weather Dashboard site
-                        </MDBCardText>
-                        <MDBBtn
-                            href="https://jamoore4579.github.io/Weather_Dashboard_Moore/"
-                            color="primary"
-                            size="md"
-                        >
-                            <MDBIcon icon="clone left" className="mr-1" />
-                            View Project
-                        </MDBBtn>
-                    </MDBCardBody>
-                </MDBCard>
-                <MDBCard className="border border-dark">
-                    <MDBCardImage 
-                        style={{ width: "485px" }}
-                        src={runbuddy}
-                        alt="run-buddy"
-                    />
-                    <MDBCardBody>
-                        <MDBCardTitle tag="h5">Run Buddy</MDBCardTitle>
-                        <MDBCardText>
-                        The Dinner Spinner site
-                        </MDBCardText>
-                        <MDBBtn
-                            href="https://jamoore4579.github.io/Run-Buddy-Repo/"
-                            color="primary"
-                            size="md"
-                        >
-                            <MDBIcon icon="clone left" className="mr-1" />
-                            View Project
-                        </MDBBtn>
-                    </MDBCardBody>
-                </MDBCard>
-                <MDBCard className="border border-dark">
-                    <MDBCardImage 
-                        style={{ width: "485px" }}
-                        src={runbuddy}
-                        alt="run-buddy"
-                    />
-                    <MDBCardBody>
-                        <MDBCardTitle tag="h5">Run Buddy</MDBCardTitle>
-                        <MDBCardText>
-                        The Dinner Spinner site
-                        </MDBCardText>
-                        <MDBBtn
-                            href="https://jamoore4579.github.io/Run-Buddy-Repo/"
-                            color="primary"
-                            size="md"
-                        >
-                            <MDBIcon icon="clone left" className="mr-1" />
-                            View Project
-                        </MDBBtn>
-                    </MDBCardBody>
-                </MDBCard>
-            </MDBCardGroup>
-        </MDBContainer>
+        <div></div>
     )
 }
 
