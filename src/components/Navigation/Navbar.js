@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
-import { IconContext } from 'react-icons/lib'
+import React, { useState, useEffect } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
+import { Button } from '../../globalStyles';
 import { 
   Nav, 
   NavbarContainer, 
@@ -9,13 +10,30 @@ import {
   MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks 
+  NavLinks,
+  NavItemBtn,
+  NavBtnLink
 } from './Navbar.elements'
 
 const Navbar = () => {
-  const [click, setClick] = useState(false)
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
 
-  const handleClick = () => setClick(!click)
+  const handleClick = () => setClick(!click);
+
+  const showButton = () => {
+    if(window.innerWidth <= 960) {
+      setButton(false)
+    } else {
+      setButton(true)
+    }
+  }
+
+  useEffect(() => {
+    showButton()    
+  }, [])
+
+  window.addEventListener('resize', showButton)
 
   return (
     <div>
@@ -29,33 +47,43 @@ const Navbar = () => {
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
-            <NavMenu onClick={handleClick}>
+            <NavMenu onClick={handleClick} click={click}>
               <NavItem>
                 <NavLinks to='/'>
                   About
                 </NavLinks>
               </NavItem>
-            </NavMenu>
-            <NavMenu onClick={handleClick}>
+    
               <NavItem>
                 <NavLinks to='/Portfolio'>
                   Portfolio
                 </NavLinks>
               </NavItem>
-            </NavMenu>
-            <NavMenu onClick={handleClick}>
+            
               <NavItem>
                 <NavLinks to='/Contact'>
                   Contact
                 </NavLinks>
               </NavItem>
-            </NavMenu>
-            <NavMenu onClick={handleClick}>
+            
               <NavItem>
                 <NavLinks to='/Resume'>
                   Resume
                 </NavLinks>
               </NavItem>
+              <NavItemBtn>
+                {button ? (
+                  <NavBtnLink to="/resume">
+                      <Button primary>Download Resume</Button>
+                  </NavBtnLink>
+                ) : (
+                  <NavBtnLink to="/resume">
+                    <Button fontBig primary>
+                      Download Resume
+                    </Button>
+                  </NavBtnLink>
+                )}
+              </NavItemBtn>
             </NavMenu>
           </NavbarContainer>
         </Nav>
