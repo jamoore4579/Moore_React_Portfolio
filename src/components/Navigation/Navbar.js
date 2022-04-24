@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { 
@@ -14,29 +14,13 @@ import {
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const [NavBtn, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
-
-  const showButton = () => {
-    if(window.innerWidth <= 960) {
-      setButton(false)
-    } else {
-      setButton(true)
-    }
-  }
-
-  useEffect(() => {
-    showButton()    
-  }, [])
-
-  window.addEventListener('resize', showButton)
 
   return (
     <div>
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav>
-          <NavContainer>
             <NavLogo to="/">
               <NavIcon />
               JAM
@@ -69,7 +53,7 @@ const Navbar = () => {
                 </NavLinks>
               </NavItem>
             </NavMenu>
-          </NavContainer>
+
         </Nav>
         </IconContext.Provider>
     </div>

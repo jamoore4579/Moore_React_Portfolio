@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 export const ProjectWrapper = styled.section.attrs({
     id: "portfolio",
-  })``;
+  })`
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #3498db;
+  `;
   
   
 export const ProjectContainer = styled.div.attrs({
@@ -22,9 +26,9 @@ gap: 2.5rem;
 `;
 
 export const ProjectItem = styled.article`
-background: var(--color-bg-variant);
+background: black;
 padding: 1.2rem;
-border-radius: 2rem;
+border-radius: 0.5rem;
 border: 1px solid transparent;
 transition: var(--transition);
 :hover {
@@ -40,11 +44,13 @@ margin-bottom: 1rem;
 `;
 
 export const ProjectItemImageContainer = styled.div`
-border-radius: 1.5rem;
+border-radius: 0.5rem;
 overflow: hidden;
 `;
 
-export const ProjectItemImage = styled.img``;
+export const ProjectItemImage = styled.img`
+height: 200px;
+`;
 
 export const ProjectTitle = styled.h3`
 margin: 1.2rem 0 2rem;

@@ -37,7 +37,17 @@ const data = [
         id: 4,
         image: weather,
         title: "Weather Dashboard Project",
-    }
+    },
+    {
+        id: 5,
+        image: weather,
+        title: "Weather Dashboard Project",
+    },
+    {
+        id: 6,
+        image: plantpal,
+        title: "Plant Pal Project",
+    },
 ]
 
 const Projects = () => {
