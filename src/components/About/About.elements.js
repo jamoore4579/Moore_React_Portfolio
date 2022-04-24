@@ -6,6 +6,10 @@ padding: 160px 0;
 background: ${({ lightBig}) => (lightBig ? '#fff' : '#101522')};
 `;
 
+export const AboutContainer = styled.div`
+
+`;
+
 export const AboutRow = styled.div`
 display: flex;
 margin: 0 -15px -15px -15px;

@@ -1,23 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { Button } from '../../globalStyles';
 import { 
   Nav, 
-  NavbarContainer, 
+  NavContainer, 
   NavLogo, 
   NavIcon, 
   MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks,
-  NavItemBtn,
-  NavBtnLink
+  NavLinks
 } from './Navbar.elements'
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+  const [NavBtn, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
 
@@ -39,7 +36,7 @@ const Navbar = () => {
     <div>
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav>
-          <NavbarContainer>
+          <NavContainer>
             <NavLogo to="/">
               <NavIcon />
               JAM
@@ -71,21 +68,8 @@ const Navbar = () => {
                   Resume
                 </NavLinks>
               </NavItem>
-              <NavItemBtn>
-                {button ? (
-                  <NavBtnLink to="/resume">
-                      <Button primary>Download Resume</Button>
-                  </NavBtnLink>
-                ) : (
-                  <NavBtnLink to="/resume">
-                    <Button fontBig primary>
-                      Download Resume
-                    </Button>
-                  </NavBtnLink>
-                )}
-              </NavItemBtn>
             </NavMenu>
-          </NavbarContainer>
+          </NavContainer>
         </Nav>
         </IconContext.Provider>
     </div>

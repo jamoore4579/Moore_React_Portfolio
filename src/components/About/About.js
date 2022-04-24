@@ -1,7 +1,8 @@
 import React from "react";
-import { Container } from "../../globalStyles";
+
 import { 
-    AboutSec, 
+    AboutSec,
+    AboutContainer, 
     AboutRow, 
     AboutColumn, 
     TextWrapper 
@@ -16,7 +17,7 @@ const About = ({
     return (
         <div>
             <AboutSec lightBg={lightBg}>
-                <Container>
+                <AboutContainer>
                     <AboutRow imgStart={imgStart}>
                         <AboutColumn>
                             <TextWrapper>
@@ -24,7 +25,7 @@ const About = ({
                             </TextWrapper>
                         </AboutColumn>
                     </AboutRow>
-                </Container>
+                </AboutContainer>
             </AboutSec>
         </div>
     );
