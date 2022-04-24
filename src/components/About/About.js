@@ -9,7 +9,7 @@ import {
 
 //const profile = require('../../assets/img/self.jpg')
 
-const InfoSection = ({
+const About = ({
     lightBg, 
     imgStart
 }) => {
@@ -30,4 +30,4 @@ const InfoSection = ({
     );
 };
 
-export default InfoSection;
+export default About;
