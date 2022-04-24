@@ -5,7 +5,6 @@ background: #101522;
 padding: 3rem 0;
 text-align: center;
 font-size: 2rem;
-margin-top: 7rem;
 
 a{
     color: #fff;

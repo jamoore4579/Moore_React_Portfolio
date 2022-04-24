@@ -7,7 +7,13 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+:root {
+    --color-primary: #4db5ff;
+    --color-primary-variant: rgba(77, 181, 255, 0.4);
+}
 `;
+
 
 export const Container = styled.div`
 z-index: 1;
