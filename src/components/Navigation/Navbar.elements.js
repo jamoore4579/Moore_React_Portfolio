@@ -30,7 +30,7 @@ z-index: 999;
 // backdrop-filter: blur(15px);
 // `;
 
-export const NavLogo = styled(Link)`
+export const NavLogo = styled.div`
 color: #fff;
 justify-self: flex-start;
 cursor: pointer;
@@ -95,7 +95,7 @@ border-bottom: 2px solid transparent;
 }
 `;
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled.div`
 color: #fff;
 display: flex;
 align-items: center;

@@ -1,63 +1,60 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { IconContext } from 'react-icons/lib';
+import { Link } from 'react-router-dom';
 import { 
-  Nav, 
-  NavContainer, 
+  Nav,  
   NavLogo, 
-  NavIcon, 
+  NavIcon,
   MobileIcon,
   NavMenu,
   NavItem,
   NavLinks
 } from './Navbar.elements'
 
-const Navbar = () => {
+export const Navbar = () => {
+
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
 
   return (
-    <div>
-      <IconContext.Provider value={{ color: '#fff' }}>
+  <div>
         <Nav>
+          <NavMenu>
             <NavLogo to="/">
               <NavIcon />
-              JAM
+              Jason Moore
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
-            <NavMenu onClick={handleClick} click={click}>
+            <NavMenu onClick={handleClick} click={click}></NavMenu>
+
               <NavItem>
-                <NavLinks to='/'>
-                  About
+                <NavLinks>
+                  <Link to="/about">About</Link>
                 </NavLinks>
               </NavItem>
-    
+
               <NavItem>
-                <NavLinks to='/Portfolio'>
-                  Portfolio
-                </NavLinks>
-              </NavItem>
-            
-              <NavItem>
-                <NavLinks to='/Contact'>
-                  Contact
+                <NavLinks>
+                  <Link to="/projects">Projects</Link>
                 </NavLinks>
               </NavItem>
             
               <NavItem>
-                <NavLinks to='/Resume'>
-                  Resume
+                <NavLinks>
+                  <Link to="/contact">Contact</Link>
+                </NavLinks>
+              </NavItem>
+            
+              <NavItem>
+                <NavLinks>
+                  <Link to="/resume">Resume</Link>
                 </NavLinks>
               </NavItem>
             </NavMenu>
-
         </Nav>
-        </IconContext.Provider>
-    </div>
+  </div>
   )
-}
-
-export default Navbar
+};
