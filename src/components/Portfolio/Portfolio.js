@@ -10,7 +10,7 @@ import {
     ProjectItemLink,
     ProjectItemLinkTwo,
 
-} from "./Projects.elements"
+} from "./Portfolio.elements"
 
 import runbuddy from "../../assets/img/run-buddy.jpg";
 import dinnerspinner from "../../assets/img/dinner_spinner.JPG";

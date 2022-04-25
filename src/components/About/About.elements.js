@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const AboutSec = styled.div`
 color: #fff;
+height: 600px;
 padding: 160px 0;
 background: ${({ lightBig}) => (lightBig ? '#fff' : '#101522')};
 `;
@@ -37,7 +38,7 @@ flex-basis: 50%;
 export const TextWrapper = styled.div`
 max-width: 540px;
 padding-top: 0;
-padding-bottom: 60px;
+padding-bottom: 30px;
 
 @media screen and (max-width: 768px) {
     padding-bottom: 65px;

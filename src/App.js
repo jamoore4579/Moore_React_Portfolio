@@ -3,7 +3,7 @@ import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Navbar } from './components/Navigation/Navbar'
 import { About } from './components/About/About'
-import { Projects } from './components/Projects/Projects'
+import { Projects } from './components/Portfolio/Portfolio'
 import { Contact } from './components/Contact/Contact'
 import { IResume } from './components/Resume/Resume'
 import { Footer } from './components/Footer/Footer'

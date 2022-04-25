@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { 
-  Nav,  
+  Nav,
   NavLogo, 
   NavIcon,
   MobileIcon,
@@ -18,6 +18,7 @@ export const Navbar = () => {
   const handleClick = () => setClick(!click);
 
   return (
+    
   <div>
         <Nav>
           <NavMenu>
@@ -38,7 +39,7 @@ export const Navbar = () => {
 
               <NavItem>
                 <NavLinks>
-                  <Link to="/projects">Projects</Link>
+                  <Link to="/projects">Porfolio</Link>
                 </NavLinks>
               </NavItem>
             

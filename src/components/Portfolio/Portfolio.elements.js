@@ -1,25 +1,20 @@
 import styled from "styled-components";
 
-export const ProjectWrapper = styled.section.attrs({
-    id: "portfolio",
-  })`
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+export const ProjectWrapper = styled.div`
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background-color: #3498db;
+  
   `;
   
   
-export const ProjectContainer = styled.div.attrs({
-className: "container",
-})`
+export const ProjectContainer = styled.div`
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 2.5rem;
-@media screen and (max-width: 1024px) {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
-}
-@media screen and (max-width: 600px) {
+padding: 2rem;
+
+@media screen and (max-width: 960px) {
     grid-template-columns: 1fr;
     gap: 1rem;
 }
