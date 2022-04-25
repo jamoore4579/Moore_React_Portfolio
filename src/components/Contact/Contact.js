@@ -1,31 +1,31 @@
 import React from "react";
 import {
-    ContactContainer,
     ContactContainerForm,
     ContactContainerFormInput,
     ContactContainerFormButton,
     ContactWrapper,
-    FirstText,
+    Label,
 } from "./Contact.elements"
 
 export const Contact = () => (
 <div>
     <ContactWrapper>
-        <FirstText>Let's Connect</FirstText>
-        <ContactContainer>
             <ContactContainerForm action="">
+                <Label>Full Name</Label> 
                 <ContactContainerFormInput
                     type="text"
                     name="name"
                     placeholder="Your Full Name"
                     required
-                />   
+                />
+                <Label>Email Address</Label>   
                 <ContactContainerFormInput
                     type="email"
                     name="email"
                     placeholder="Your Email"
                     required
                 />
+                <Label>User Information</Label>
                 <ContactContainerFormInput
                     type="message"
                     rows="7"
@@ -34,7 +34,6 @@ export const Contact = () => (
                 />
                 <ContactContainerFormButton>Send Message</ContactContainerFormButton>
             </ContactContainerForm>
-        </ContactContainer>
     </ContactWrapper>
 </div>
 )

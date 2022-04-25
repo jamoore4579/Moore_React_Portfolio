@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutSec = styled.div`
 color: #fff;
-height: 600px;
+height: 500px;
 padding: 160px 0;
 background: ${({ lightBig}) => (lightBig ? '#fff' : '#101522')};
 `;

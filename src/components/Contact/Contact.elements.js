@@ -1,39 +1,32 @@
 import styled from "styled-components"
 
-export const ContactWrapper = styled.section.attrs({
-    id: "contact",
-})`
+export const ContactWrapper = styled.div`
 background: #101522;
-`;
-
-export const FirstText = styled.h5``;
-
-export const ContactContainer = styled.div`
-width: 58%;
-display: grid;
-grid-template-columns: 30% 58%;
-gap: 12%;
-
-@media screen and (max-width: 960px) {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-}
+height: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 20px;
 `;
 
 export const ContactContainerForm = styled.form`
-display: flex;
-flex-direction: column;
-gap: 1.2rem;
-`
+width: 100%;
+max-width: 700px;
+padding: 30px;
+background-color: #fff;
+border-radius: 10px;
+box-sizing: border-box;
+`;
 
 export const ContactContainerFormInput = styled.input`
 width: 100%;
+margin:  5px auto;
 padding: 1.5rem;
 border-radius: 0.5rem;
 background: transparent;
-border: 2px solid blanchedalmond;
+border: 2px solid black;
 color: #fff;
-`
+`;
 
 export const ContactContainerFormTextArea = styled.textarea`
 width: 100%;
@@ -45,7 +38,20 @@ color: #fff;
 resize: none;
 `
 
-export const ContactContainerFormButton = styled.button.attrs({
-    type: "submit",
-    className: "bnt btn-primary",
-})``;
+export const ContactContainerFormButton = styled.button`
+background-color: #3498db;
+color:#fff;
+border: 1px solid #3498db;
+border-radius: 4px;
+display: block;
+margin: 8px auto 0 auto;
+height: 40px;
+font-size: 1rem;
+padding: 5px 30px;
+cursor: pointer;
+`;
+
+export const Label = styled.label`
+font-size: 20px;
+font-weight: bold;
+`;
