@@ -12,10 +12,10 @@ import {
 
 } from "./Portfolio.elements"
 
-import runbuddy from "../../assets/img/run-buddy.jpg";
-import dinnerspinner from "../../assets/img/dinner_spinner.JPG";
-import plantpal from "../../assets/img/plant_pal.JPG";
-import weather from "../../assets/img/weather.jpg";
+import runbuddy from "../assets/img/run-buddy.jpg";
+import dinnerspinner from "../assets/img/dinner_spinner.JPG";
+import plantpal from "../assets/img/plant_pal.JPG";
+import weather from "../assets/img/weather.jpg";
 
 const data = [
     {
