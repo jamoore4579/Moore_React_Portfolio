@@ -6,7 +6,7 @@ background: #101522;
 `;
 
 export const Image = styled.img`
-  width: 46%;
+  width: 30%;
   float: left;
-  margin-right: 10px;
+  margin-left: 10px;
 `;

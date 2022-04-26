@@ -5,7 +5,7 @@ import { Navbar } from './components/Navigation/Navbar'
 import { About } from './components/About/About'
 import { Projects } from './components/Portfolio/Portfolio'
 import { Contact } from './components/Contact/Contact'
-import Resume from './components/Resume/Resume'
+import { Resume } from './components/Resume/Resume'
 import { Footer } from './components/Footer/Footer'
 
 function App() {
