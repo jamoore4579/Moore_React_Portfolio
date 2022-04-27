@@ -19,6 +19,7 @@ export const NavContainer = styled(Container)`
 display: flex;
 justify-content: space-between;
 height: 80px;
+position: fixed;
 
 ${Container}
 `;

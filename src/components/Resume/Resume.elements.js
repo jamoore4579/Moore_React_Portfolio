@@ -6,10 +6,10 @@ background-color: #101522;
 display: flex;
 justify-content: center;
 width: 100%;
-min-height: 80vh;
+min-height: 100vh;
 `;
 
-export const ResumeContainer = styled.section`
+export const ResumeContainer = styled.div`
 margin-right: auto;
 margin-left: auto;
 margin-top: 80px;
