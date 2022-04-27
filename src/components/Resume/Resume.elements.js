@@ -25,7 +25,7 @@ justify-content: center;
 `;
 
 export const Image = styled.img`
-width: 80%;
+width: 600px;
 `;
 
 export const ResumeBtnContainer = styled.div`

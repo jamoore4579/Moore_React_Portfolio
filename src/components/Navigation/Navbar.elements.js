@@ -78,7 +78,7 @@ border-bottom: 2px solid transparent;
 }
 `;
 
-export const NavLinks = styled.div`
+export const NavLinks = styled.a`
 color: #fff;
 display: flex;
 align-items: center;
