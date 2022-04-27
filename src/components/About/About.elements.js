@@ -18,7 +18,7 @@ vertical-align: top;
 
 @media screen and (max-width: 960px) {
 display: flex;
-margin: 40px auto;
+margin: 0 auto;
 }
 `;
 
@@ -43,6 +43,10 @@ export const Image = styled.img`
   margin-left: auto;
   margin-right: auto;
   border-radius: 7px;
+
+  @media screen and (max-width: 960px) {
+  margin: 20px auto;
+  }
 `;
 
 export const AboutText = styled.p`
