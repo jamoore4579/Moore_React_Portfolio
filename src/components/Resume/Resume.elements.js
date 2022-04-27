@@ -2,25 +2,37 @@ import styled from "styled-components";
 
 
 export const ResumeWrapper = styled.div`
-background: #101522;
+background-color: #101522;
+display: flex;
+justify-content: center;
+width: 100%;
+min-height: 80vh;
+`;
+
+export const ResumeContainer = styled.section`
+margin-right: auto;
+margin-left: auto;
+margin-top: 80px;
+width: 400px;
+padding: 5px;
+height: 450px;
+`;
+
+export const ResumeImage = styled.div`
 height: 100%;
 display: flex;
 justify-content: center;
-align-items: center;
-padding: 0 20px;
-border: 1px solid red;
 `;
 
-export const ResumeContainer = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-height: 80%;
-border: 1px solid red;
+export const Image = styled.img`
+width: 80%;
 `;
 
-export const ResumeImage = styled.section`
-text-align: center;
+export const ResumeBtnContainer = styled.div`
+margin-top: 10px;
+height: 60px;
+width: 200px;
+position: absolute;
 `
 
 export const ResumeButton = styled.button`
@@ -37,10 +49,7 @@ cursor: pointer;
 `;
 
 export const ResumeLink = styled.a`
+color: #fff;
+text-decoration: none;
 `;
 
-export const Image = styled.img`
-  width: 50%;
-  float: left;
-  margin-left: 10px;
-`;

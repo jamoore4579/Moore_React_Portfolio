@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
-height: 500px;
-background: #101522;
+background-color: #101522;
+width: 100%;
+min-height: 100vh;
 `;
 
 export const Image = styled.img`

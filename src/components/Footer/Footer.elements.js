@@ -23,7 +23,7 @@ z-index: 1;
 export const FooterSocials = styled.div`
 display: flex;
 justify-content: center;
-gap: 3rem;
+gap: 12rem;
 `;
 
 export const FooterSocialsLink = styled.a`
