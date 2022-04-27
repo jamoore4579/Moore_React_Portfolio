@@ -1,5 +1,7 @@
 import styled from 'styled-components';
+import { Container } from '../../globalStyles'
 import { FaNapster } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export const Nav = styled.nav`
 background: #101522;
@@ -13,7 +15,15 @@ top: 0;
 z-index: 999;
 `;
 
-export const NavLogo = styled.div`
+export const NavContainer = styled(Container)`
+display: flex;
+justify-content: space-between;
+height: 80px;
+
+${Container}
+`;
+
+export const NavLogo = styled(Link)`
 color: #fff;
 justify-self: flex-start;
 cursor: pointer;
@@ -78,7 +88,7 @@ border-bottom: 2px solid transparent;
 }
 `;
 
-export const NavLinks = styled.a`
+export const NavLinks = styled(Link)`
 color: #fff;
 display: flex;
 align-items: center;

@@ -33,9 +33,3 @@ export const Resume = () => {
       
     )
 };
-
-{/* <ResumeButton>
-            <ResumeLink href={require("../assets/img/JasonMoore.pdf")} target="_blank">
-              Download Resume
-            </ResumeLink>
-          </ResumeButton> */}

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { IconContext } from 'react-icons/lib';
 import {
   Nav,
+  NavContainer,
   NavLogo, 
   NavIcon,
   MobileIcon,
@@ -16,44 +17,49 @@ export const Navbar = () => {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
   return (
-    
-  <Nav>
-    <NavMenu>
-      <NavLogo to="/">
-        <NavIcon />
-        Jason Moore
-      </NavLogo>
-      <MobileIcon onClick={handleClick}>
-        {click ? <FaTimes /> : <FaBars />}
-      </MobileIcon>
-      <NavMenu onClick={handleClick} click={click}></NavMenu>
+  <>
+    <IconContext.Provider value={{ color: '#fff' }}>
+    <Nav>
+      <NavContainer>
+          <NavLogo to="/" onClick={closeMobileMenu}>
+            <NavIcon />
+            Jason Moore
+          </NavLogo>
+          <MobileIcon onClick={handleClick}>
+            {click ? <FaTimes /> : <FaBars />}
+          </MobileIcon>
+          <NavMenu onClick={handleClick} click={click}>
 
-        <NavItem>
-          <NavLinks>
-            <Link to="/about">About</Link>
-          </NavLinks>
-        </NavItem>
+          <NavItem>
+            <NavLinks to="/about" onClick={closeMobileMenu}>
+              About
+            </NavLinks>
+          </NavItem>
 
-        <NavItem>
-          <NavLinks>
-            <Link to="/projects">Porfolio</Link>
-          </NavLinks>
-        </NavItem>
-      
-        <NavItem>
-          <NavLinks>
-            <Link to="/contact">Contact</Link>
-          </NavLinks>
-        </NavItem>
-      
-        <NavItem>
-          <NavLinks>
-            <Link to="/resume">Resume</Link>
-          </NavLinks>
-        </NavItem>
-      </NavMenu>
-  </Nav>
+          <NavItem>
+            <NavLinks to="/projects" onClick={closeMobileMenu}>
+              Porfolio
+            </NavLinks>
+          </NavItem>
+        
+          <NavItem>
+            <NavLinks to="/contact" onClick={closeMobileMenu}>
+              Contact
+            </NavLinks>
+          </NavItem>
+        
+          <NavItem>
+            <NavLinks to="/resume" onClick={closeMobileMenu}>
+              Resume
+            </NavLinks>
+          </NavItem>
+        </NavMenu>
+      </NavContainer>
+    </Nav>
+    </IconContext.Provider>
+  </>
   )
 };
