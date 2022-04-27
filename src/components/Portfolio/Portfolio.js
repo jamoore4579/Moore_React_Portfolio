@@ -16,6 +16,8 @@ import runbuddy from "../assets/img/run-buddy.jpg";
 import dinnerspinner from "../assets/img/dinner_spinner.JPG";
 import plantpal from "../assets/img/plant_pal.JPG";
 import weather from "../assets/img/weather.jpg";
+import notetaker from "../assets/img/NoteTaker.JPG"
+import workschedule from "../assets/img/WorkScheduler.JPG"
 
 const data = [
     {
@@ -40,13 +42,13 @@ const data = [
     },
     {
         id: 5,
-        image: weather,
-        title: "Weather Dashboard Project",
+        image: notetaker,
+        title: "Note Taker Project",
     },
     {
         id: 6,
-        image: plantpal,
-        title: "Plant Pal Project",
+        image: workschedule,
+        title: "Work Schedule Project",
     },
 ]
 

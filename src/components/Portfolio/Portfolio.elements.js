@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProjectWrapper = styled.div`
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #3498db;
+  background-color: #101522;
   
   `;
   
@@ -15,7 +15,12 @@ gap: 2.5rem;
 padding: 2rem;
 
 @media screen and (max-width: 960px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media screen and (max-width: 660px) {
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
 }
 `;
@@ -45,6 +50,9 @@ overflow: hidden;
 
 export const ProjectItemImage = styled.img`
 height: 200px;
+width: 100%;
+margin-left: 10px;
+margin-right: 10px;
 `;
 
 export const ProjectTitle = styled.h3`
