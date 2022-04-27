@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ProjectWrapper = styled.div`
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-bottom: 50px;
   background-color: #101522;
   
   `;
@@ -51,18 +52,20 @@ overflow: hidden;
 export const ProjectItemImage = styled.img`
 height: 200px;
 width: 100%;
+border-radius: 3px;
 margin-left: 10px;
 margin-right: 10px;
 `;
 
 export const ProjectTitle = styled.h3`
+color: #fff;
 margin: 1.2rem 0 2rem;
 `;
 
-export const ProjectItemLink = styled.a.attrs({
-className: "btn",
-})``;
+export const ProjectItemLink = styled.a`
+color: #fff;
+`;
 
-export const ProjectItemLinkTwo = styled.a.attrs({
-className: "btn btn-primary",
-})``;
+export const ProjectItemLinkTwo = styled.a`
+color: #fff;
+`
