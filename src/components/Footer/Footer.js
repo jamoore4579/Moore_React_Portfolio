@@ -24,6 +24,4 @@ export const Footer = () => {
             </FooterSocials>
         </FooterWrapper>
     )
-}
-
-export default Footer;
+};

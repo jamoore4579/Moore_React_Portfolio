@@ -1,14 +1,19 @@
 import styled from "styled-components"
 
 export const FooterWrapper = styled.footer`
-background: #101522;
-padding: 3rem 0;
-text-align: center;
-font-size: 2rem;
+background-color: #101522;
+align-items: center;
+bottom: 0;
+font-size: 3em;
+border: 2px solid red;
+color: #fff;
+display: flex;
+justify-content: center;
+height: 100px;
+position: fixed;
+width: 100%;
+z-index: 1;
 
-a{
-    color: #fff;
-}
 
 @media screen and (max-width: 960px) {
     grid-template-columns: 1fr;
