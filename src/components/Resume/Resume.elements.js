@@ -20,8 +20,24 @@ height: 450px;
 
 export const ResumeImage = styled.div`
 height: 100%;
+margin-top: 30px;
+
+padding: 20px;
+`;
+
+export const ResumeTitle = styled.div`
+color: #fff;
+font-size: 40px;
+font-weight: bold;
 display: flex;
 justify-content: center;
+`;
+
+export const ResumeList = styled.p`
+color: #fff;
+margin: 20px;
+font-size: 20px;
+text-align: center;
 `;
 
 export const Image = styled.img`

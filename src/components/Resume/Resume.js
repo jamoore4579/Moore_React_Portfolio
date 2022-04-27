@@ -3,6 +3,8 @@ import {
   ResumeWrapper,
   ResumeContainer,
   ResumeImage,
+  ResumeTitle,
+  ResumeList,
   Image,
   ResumeBtnContainer,
   ResumeButton,
@@ -19,7 +21,17 @@ export const Resume = () => {
       <ResumeWrapper>
         <ResumeContainer>
           <ResumeImage>
-            <Image src={img} />
+            <ResumeTitle>
+              <p>Proficiencies</p><br></br>
+            </ResumeTitle>
+            <ResumeList>
+              <p>HTML/CSS</p><br></br>
+              <p>JavaScript</p><br></br>
+              <p>Nodde.js</p><br></br>
+              <p>Express</p><br></br>
+              <p>SQL</p><br></br>
+              <p>React</p><br></br>
+            </ResumeList>
           </ResumeImage>
         </ResumeContainer>
         <ResumeBtnContainer>
