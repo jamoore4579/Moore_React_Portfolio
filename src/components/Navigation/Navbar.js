@@ -40,7 +40,7 @@ export const Navbar = () => {
           </NavItem>
 
           <NavItem>
-            <NavLinks to="/projects" onClick={closeMobileMenu}>
+            <NavLinks to="/portfolio" onClick={closeMobileMenu}>
               Porfolio
             </NavLinks>
           </NavItem>
