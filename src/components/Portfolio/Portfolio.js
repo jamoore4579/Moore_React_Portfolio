@@ -83,7 +83,7 @@ export const Projects = () => {
                                 Deployed Link
                             </ProjectItemLink>
                             <ProjectItemLinkTwo
-                                href="http://github.com" target="_blank"
+                                href={item.gitlink} target="_blank"
                             >
                                 Github Link
                             </ProjectItemLinkTwo>
