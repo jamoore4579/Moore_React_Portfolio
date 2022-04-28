@@ -16,8 +16,8 @@ function App() {
                 <GlobalStyle />
                 <Navbar />
                     <Routes>
-                        <Route path="/Moore_React_Portfolio" element={<About />} />
-                        <Route path="/" exact element={<About />} />Moore_React_Portfolio
+                        <Route path="/" element={<About />} />
+                        <Route path="/" exact element={<About />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/portfolio" element={<Portfolio />} />
                         <Route path="/contact" element={<Contact />} />
