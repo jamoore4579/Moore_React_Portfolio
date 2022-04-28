@@ -5,7 +5,7 @@ export const ProjectWrapper = styled.div`
   padding-bottom: 1rem;
   margin-bottom: 50px;
   background-color: #101522;
-  
+  min-height: 90vh;
   `;
   
   
