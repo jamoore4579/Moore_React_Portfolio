@@ -64,31 +64,34 @@ const data = [
     },
 ]
 
-export const Projects = () => (
-<div>
-    <ProjectWrapper>
-        <ProjectContainer>
-            {data.map((item) => (
-                <ProjectItem key={item.id}>
-                    <ProjectItemImageContainer>
-                        <ProjectItemImage src={item.image} alt={item.title}/>
-                    </ProjectItemImageContainer>
+export const Projects = () => {
 
-                    <ProjectTitle>{item.title}</ProjectTitle>
+    return (
+    <div>
+        <ProjectWrapper>
+            <ProjectContainer>
+                {data.map((item) => (
+                    <ProjectItem key={item.id}>
+                        <ProjectItemImageContainer>
+                            <ProjectItemImage src={item.image} alt={item.title}/>
+                        </ProjectItemImageContainer>
 
-                    <ProjectItemCta>
-                        <ProjectItemLink href={item.link} target="_blank">
-                            Deployed Link
-                        </ProjectItemLink>
-                        <ProjectItemLinkTwo
-                            href="http://github.com" target="_blank"
-                        >
-                            Github Link
-                        </ProjectItemLinkTwo>
-                    </ProjectItemCta>
-                </ProjectItem>
-            ))}
-        </ProjectContainer>
-    </ProjectWrapper>
-</div>
-)
+                        <ProjectTitle>{item.title}</ProjectTitle>
+
+                        <ProjectItemCta>
+                            <ProjectItemLink href={item.link} target="_blank">
+                                Deployed Link
+                            </ProjectItemLink>
+                            <ProjectItemLinkTwo
+                                href="http://github.com" target="_blank"
+                            >
+                                Github Link
+                            </ProjectItemLinkTwo>
+                        </ProjectItemCta>
+                    </ProjectItem>
+                ))}
+            </ProjectContainer>
+        </ProjectWrapper>
+    </div>
+    )
+};

@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
-export const ContactWrapper = styled.div`
+export const ContactWrapper = styled.section`
 background-color: #101522;
 width: 100%;
-min-height: 100vh;
+min-height: 90vh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -26,7 +26,7 @@ padding: 1.5rem;
 border-radius: 0.5rem;
 background: transparent;
 border: 2px solid black;
-color: #fff;
+color: #000000;
 `;
 
 export const ContactContainerFormTextArea = styled.textarea`
