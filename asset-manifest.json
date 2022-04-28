@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Moore_React_Portfolio/static/js/main.de146184.js",
+    "static/media/dinner_spinner.JPG": "/Moore_React_Portfolio/static/media/dinner_spinner.f8e188543b7d452295ee.JPG",
+    "static/media/weather.jpg": "/Moore_React_Portfolio/static/media/weather.9c87961e2743ed5b2661.jpg",
+    "static/media/JasonMoore.pdf": "/Moore_React_Portfolio/static/media/JasonMoore.bcee4a43cefe04cc0b8d.pdf",
+    "static/media/self.jpg": "/Moore_React_Portfolio/static/media/self.f046bd42ed54c1d4ec6b.jpg",
+    "static/media/Resume.JPG": "/Moore_React_Portfolio/static/media/Resume.26c99d7153a43289d6c4.JPG",
+    "static/media/run-buddy.jpg": "/Moore_React_Portfolio/static/media/run-buddy.b44c4d244cf2fd8f28d7.jpg",
+    "static/media/plant_pal.JPG": "/Moore_React_Portfolio/static/media/plant_pal.9e8e1f605800bc632b95.JPG",
+    "static/media/WorkScheduler.JPG": "/Moore_React_Portfolio/static/media/WorkScheduler.9707b7f521f4b51e9ef4.JPG",
+    "static/media/NoteTaker.JPG": "/Moore_React_Portfolio/static/media/NoteTaker.2a39b84e47777a813500.JPG",
+    "index.html": "/Moore_React_Portfolio/index.html",
+    "main.de146184.js.map": "/Moore_React_Portfolio/static/js/main.de146184.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.de146184.js"
+  ]
+}
