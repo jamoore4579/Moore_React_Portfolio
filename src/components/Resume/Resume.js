@@ -5,7 +5,6 @@ import {
   ResumeImage,
   ResumeTitle,
   ResumeList,
-  Image,
   ResumeBtnContainer,
   ResumeButton,
   ResumeLink,
@@ -15,7 +14,6 @@ import {
 
 export const Resume = () => {
 
-    const img = require('../assets/img/Resume.JPG')
 
     return (
       <ResumeWrapper>
