@@ -1,6 +1,6 @@
 # Deployed Link
 
-https://jamoore4579.github.io/Moore_React_Portfolio/
+https://moore-react-portfolio.herokuapp.com/
 
 # Getting Started with Create React App
 
