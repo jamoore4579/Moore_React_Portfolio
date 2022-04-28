@@ -3,7 +3,7 @@ import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Navbar } from './components/Navigation/Navbar'
 import { About } from './components/About/About'
-import { Projects } from './components/Portfolio/Portfolio'
+import { Portfolio } from './components/Portfolio/Portfolio'
 import { Contact } from './components/Contact/Contact'
 import { Resume } from './components/Resume/Resume'
 import { Footer } from './components/Footer/Footer'
@@ -16,9 +16,10 @@ function App() {
                 <GlobalStyle />
                 <Navbar />
                     <Routes>
-                        <Route path="/" exact element={<About />} />
+                        <Route path="/Moore_React_Portfolio" element={<About />} />
+                        <Route path="/" exact element={<About />} />Moore_React_Portfolio
                         <Route path="/about" element={<About />} />
-                        <Route path="/projects" element={<Projects />} />
+                        <Route path="/portfolio" element={<Portfolio />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/resume" element={<Resume />} />
                     </Routes>

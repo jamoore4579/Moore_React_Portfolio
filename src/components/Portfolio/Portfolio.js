@@ -64,7 +64,7 @@ const data = [
     },
 ]
 
-export const Projects = () => {
+export const Portfolio = () => {
 
     return (
     <div>
