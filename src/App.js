@@ -9,12 +9,14 @@ import { Resume } from './components/Resume/Resume'
 import { Footer } from './components/Footer/Footer'
 
 function App() {
+
         return (
             <React.Fragment>
                 <Router>
                 <GlobalStyle />
                 <Navbar />
                     <Routes>
+                        <Route path="/Moore_React_Portfolio" exact element={<About />} />
                         <Route path="/" exact element={<About />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/projects" element={<Projects />} />
