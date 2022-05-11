@@ -15,7 +15,7 @@ import {
 import runbuddy from "../assets/img/run-buddy.jpg";
 import dinnerspinner from "../assets/img/dinner_spinner.JPG";
 import plantpal from "../assets/img/plant_pal.JPG";
-import weather from "../assets/img/weather.jpg";
+import flicksandfood from "../assets/img/flicksandfoods.JPG";
 import notetaker from "../assets/img/NoteTaker.JPG"
 import workschedule from "../assets/img/WorkScheduler.JPG"
 
@@ -38,15 +38,15 @@ const data = [
         id: 3,
         image: plantpal,
         title: "Plant Pal Project",
-        link: "http://https://plant-pal-project.herokuapp.com/",
+        link: "https://plant-pal-project.herokuapp.com/",
         gitlink: "https://github.com/comkirk30/plant_pal",
     },
     {
         id: 4,
-        image: weather,
-        title: "Weather Dashboard Project",
-        link: "http://jamoore4579.github.io/Weather_Dashboard_Moore/",
-        gitlink: "https://github.com/jamoore4579/Weather_Dashboard_Moore",
+        image: flicksandfood,
+        title: "Flicks and Food Project",
+        link: "https://flicks-and-food.herokuapp.com/",
+        gitlink: "http://github.com/jamoore4579/flicks-and-food",
     },
     {
         id: 5,
